@@ -60,12 +60,12 @@ const Testimonials = () => {
 
 
   return (
-    <div className='flex flex-col w-full items-center py-32 gap-10'>
-        <h1 className='text-4xl font-bold'>What our clients have to say</h1>
+    <div className='flex flex-col w-full items-center py-32 px-5 gap-10'>
+        <h1 className='text-4xl font-bold text-center'>What our clients have to say</h1>
 
         <div className='grid grid-cols-2 md:grid-cols-1 gap-10'>
             {testimonials.map((item, index) => (
-                    <div key={index} className="bg-white text-black w-[300px] md:w-[90vw] flex flex-col p-5 rounded-2xl justify-between">
+                    <div key={index} className="bg-white text-black w-[300px] md:w-[90vw] flex flex-col p-5 rounded-2xl justify-between testimonial-shadow">
                         <div className='pb-5 border-b-2'>
                             {StarRating(item.rating)}
                             <p className='font-normal'>{item.testimonial}</p>

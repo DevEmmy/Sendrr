@@ -4,6 +4,7 @@ import { MdOutlineArrowOutward } from 'react-icons/md'
 import Hero from './Hero'
 import Features from './features'
 import Testimonial from './testimonial'
+import FAQ from './faqs'
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       </div>
       <Features />
       <Testimonial />
+      <FAQ />
         
     </div>
   )
