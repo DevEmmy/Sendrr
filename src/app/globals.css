@@ -26,6 +26,22 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.feature-shadow{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition-duration: 250ms;
+}
+
+.feature-shadow:hover{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.testimonial-shadow{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.faq-shadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
