@@ -38,14 +38,14 @@ const FAQ = () => {
         }));
       }
   return (
-    <div className='w-full flex justify-center items-center py-20 px-[23%] md:px-3 h-screen'>
+    <div className='w-full flex justify-center items-center py-20 px-[23%] md:px-3'>
         <div className='flex md:flex-col bg-white rounded-xl faq-shadow'>
             <picture className='w-[50%] md:w-[100%]'>
                 <source media="(max-width: 768px)" srcSet={mobileImg.src} />
                 <Image src={img} alt="" className='rounded-l-xl md:rounded-l-none md:rounded-t-xl'/>
             </picture>
             
-            <div className='p-7'>
+            <div className='p-7 w-[50%] md:w-[100%]'>
                 <h1 className='text-3xl md:text-2xl md:text-center font-semibold mb-10'>Frequently Asked Questions</h1>
                 {faqs.map(faq=>(
             <>
