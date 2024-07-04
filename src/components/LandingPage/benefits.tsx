@@ -28,7 +28,7 @@ const Benefits = () => {
         <h1 className='font-bold text-4xl text-center'>The benefits you get.</h1>
         <div className='grid grid-cols-3 md:grid-cols-1 gap-5 '>
             {benefits.map((item, index) => (
-                <div key={index} className='bg-white rounded-xl py-7 px-3 flex flex-col items-center text-center feature-shadow'>
+                <div key={index} className='rounded-xl py-7 px-3 flex flex-col items-center text-center '>
                     <Image src={item.img} alt="" className='w-[200px]'/>
                 <h3 className='font-bold text-xl'>{item.benefit}</h3>
                 <p className='text-gray-500 w-[75%]'>{item.description}</p>
