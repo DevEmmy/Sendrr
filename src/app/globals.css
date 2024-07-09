@@ -44,3 +44,27 @@ body {
     text-wrap: balance;
   }
 }
+
+.modal__overlay{
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 998;
+  @apply backdrop-blur-sm cursor-pointer
+}
+
+.modal__container{
+ @apply w-3/5 left-[20%] top-12 fixed bg-[rgb(100,100,100)] z-[999] text-sm h-fit my-auto rounded-2xl flex flex-col gap-5 p-10 shadow-2xl
+}
+
+.connectionOption{
+  @apply flex gap-5 items-start
+}
+
+.connectionNumber{
+  @apply bg-white text-black px-2  rounded-full
+}

@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { HiPlus } from 'react-icons/hi'
+import { useConnectionModal } from '../CreateConnection/ConnectionModalProvider'
 
 const SideBar = () => {
     const [active, setActive] = useState(0)
@@ -8,12 +9,15 @@ const SideBar = () => {
         "Macbook M3",
         "HP 9470"
     ]
+
+    const { open } = useConnectionModal();
+    
     return (
         <div className='off h-[100vh] p-5 flex flex-col gap-4'>
             <p>Sendrr</p>
 
             <div>
-                <button className='flex gap-2 items-center rounded-md border-2 border-white w-full p-3 justify-center'>
+                <button className='flex gap-2 items-center rounded-md border-2 border-white w-full p-3 justify-center'  onClick={open}>
                     <HiPlus />
                     <p className='text-sm'>Add New Device</p>
                 </button>
