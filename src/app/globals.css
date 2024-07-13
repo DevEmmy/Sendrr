@@ -68,3 +68,7 @@ body {
 .connectionNumber{
   @apply bg-white text-black px-2  rounded-full
 }
+
+.auth > input{
+  @apply p-3 rounded-md text-black
+}
